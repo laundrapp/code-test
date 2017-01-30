@@ -4,21 +4,21 @@ namespace Laundrapp\Laundrone\Drones;
 
 class PrototypeDrone
 {
-	/**
-	 * Speed of drone in miles per hour.
-	 *
-	 * @var int
-	 */
-	private $speed = 60;
+    /**
+     * Speed of drone in miles per hour.
+     *
+     * @var int
+     */
+    private $speed = 60;
 
 
 
-	/**
-	 * Units of fuel that the drone has.
-	 *
-	 * @var int
-	 */
-	private $fuelUnits = 10;
+    /**
+     * Units of fuel that the drone has.
+     *
+     * @var int
+     */
+    private $fuelUnits = 10;
 
 
 
@@ -28,5 +28,5 @@ class PrototypeDrone
      *
      * @var int
      */
-	private $milesPerUnit = 10;
+    private $milesPerUnit = 10;
 }
