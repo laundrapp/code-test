@@ -25,6 +25,7 @@ The flight management system must be a command line application and allow us to 
 #### Example of flight summary screen
 
 The flight summary screen must show all the information below but can be displayed in any format.
+
 | Departure Time    | Flight Distance | Flight Duration | Arrival Time      |
 | ----------------- | --------------- | --------------- | ----------------- |
 | 14:45 (UTC+02:00) | 1448 miles      | 3:32            | 03:17 (UTC-11:00) |
