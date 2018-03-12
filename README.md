@@ -194,6 +194,7 @@ $this->assertFalse(syntax_validator('({)}'));
 $this->assertTrue(syntax_validator('([{}])'));
 $this->assertTrue(syntax_validator('([]{})()'));
 $this->assertFalse(syntax_validator('()[[]{}'));
+```
 
 
 ------
