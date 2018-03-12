@@ -1,5 +1,5 @@
 {
-    "name": "michael/code-kata",
+    "name": "laundrapp/code-kata",
     "require-dev": {
         "phpunit/phpunit": "^6.0"
     },
@@ -7,12 +7,19 @@
         {
             "name": "Michael King",
             "email": "michaelking@laundrapp.com"
+        },
+        {
+            "name": "Ozzy Giritli",
+            "email": "ozzy@laundrapp.com"
         }
     ],
     "autoload": {
         "psr-4": {
             "Laundrapp\\Kata\\": "src/"
-        }
+        },
+        "files": [
+            "tests/helpers.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
