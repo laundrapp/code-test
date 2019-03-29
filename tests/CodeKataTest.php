@@ -27,18 +27,6 @@ class CodeKataTest extends TestCase
         $this->assertNotEquals('seven', string_average(['six', 'six']));
     }
 
-    public function test_braces()
-    {
-        $this->checkFunction('syntax_validator');
-        $this->assertFalse(syntax_validator('('));
-        $this->assertTrue(syntax_validator('()'));
-        $this->assertTrue(syntax_validator('({})'));
-        $this->assertFalse(syntax_validator('({)}'));
-        $this->assertTrue(syntax_validator('([{}])'));
-        $this->assertTrue(syntax_validator('([]{})()'));
-        $this->assertFalse(syntax_validator('()[[]{}'));
-    }
-
     public function test_dna_sequencer()
     {
         $this->checkFunction('dna_sequencer');
@@ -69,6 +57,18 @@ class CodeKataTest extends TestCase
         $this->assertEquals(3, stray_number([2,3,2]));
         $this->assertEquals(1, stray_number([9,9,1]));
         $this->assertNotEquals(1, stray_number([1,1,9]));
+    }
+
+    public function test_braces()
+    {
+        $this->checkFunction('syntax_validator');
+        $this->assertFalse(syntax_validator('('));
+        $this->assertTrue(syntax_validator('()'));
+        $this->assertTrue(syntax_validator('({})'));
+        $this->assertFalse(syntax_validator('({)}'));
+        $this->assertTrue(syntax_validator('([{}])'));
+        $this->assertTrue(syntax_validator('([]{})()'));
+        $this->assertFalse(syntax_validator('()[[]{}'));
     }
 
     public function test_truth()
