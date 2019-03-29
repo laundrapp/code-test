@@ -14,7 +14,7 @@ GTAT  -> CATA
 ```
 function dna_sequencer(string $input): string
 {
-
+	// Easy
 }
 ```
 
@@ -46,6 +46,7 @@ Input                        -> Output
 ```
 function string_average(array $numbers): string
 {
+	// Easy
 
 }
 ```
@@ -105,7 +106,7 @@ Output
 ```
 function pyramid(int $floors): string
 {
-
+	// Medium
 }
 ```
 
@@ -143,7 +144,7 @@ Input     -> Output
 ```
 function stray_number(array $numbers): int
 {
-
+	// Medium
 }
 ```
 
@@ -181,7 +182,7 @@ Input    -> Output
 ```
 function syntax_validator(string $syntax): bool
 {
-
+	// Hard
 }
 ```
 
