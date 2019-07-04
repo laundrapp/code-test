@@ -35,6 +35,15 @@ class CodeKataTest extends TestCase
         $this->assertNotEquals('CATA', dna_sequencer('CATA'));
     }
 
+    public function test_stray_number()
+    {
+        $this->checkFunction('stray_number');
+        $this->assertEquals(3, stray_number([1,1,1,3]));
+        $this->assertEquals(3, stray_number([2,3,2]));
+        $this->assertEquals(1, stray_number([9,9,1]));
+        $this->assertNotEquals(1, stray_number([1,1,9]));
+    }
+
     public function test_pyramid()
     {
         $this->checkFunction('pyramid');
@@ -48,15 +57,6 @@ class CodeKataTest extends TestCase
         $this->assertEquals(
             " * \n" .
             "***", pyramid(2));
-    }
-
-    public function test_stray_number()
-    {
-        $this->checkFunction('stray_number');
-        $this->assertEquals(3, stray_number([1,1,1,3]));
-        $this->assertEquals(3, stray_number([2,3,2]));
-        $this->assertEquals(1, stray_number([9,9,1]));
-        $this->assertNotEquals(1, stray_number([1,1,9]));
     }
 
     public function test_braces()

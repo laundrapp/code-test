@@ -63,6 +63,38 @@ $this->assertNotEquals('seven', string_average(['six', 'six']));
 ------
 
 
+# Stray number `Medium`
+
+You are given an array of numbers. The array will always have 3 or more entries. 
+Every number in the array is the same except for one. Find the stray number.
+
+```
+Input     -> Output
+[1,1,1,3] -> 3
+[2,3,2]   -> 3
+[9,9,1]   -> 1
+```
+
+## Function skeleton
+```
+function stray_number(array $numbers): int
+{
+	// Medium
+}
+```
+
+## Tests
+```
+$this->assertEquals(3, stray_number([1,1,1,3]));
+$this->assertEquals(3, stray_number([2,3,2]));
+$this->assertEquals(1, stray_number([9,9,1]));
+$this->assertNotEquals(1, stray_number([1,1,9]));
+```
+
+
+------
+
+
 # Pyramid `Medium`
 
 What's better than ASCII art? ASCII pyramids! Given a *odd* number of floors, your function must
@@ -122,38 +154,6 @@ $this->assertEquals("*", pyramid(1));
 $this->assertEquals(
 " * \n"
 "***", pyramid(2));
-```
-
-
-------
-
-
-# Stray number `Medium`
-
-You are given an array of numbers. The array will always have 3 or more entries. 
-Every number in the array is the same except for one. Find the stray number.
-
-```
-Input     -> Output
-[1,1,1,3] -> 3
-[2,3,2]   -> 3
-[9,9,1]   -> 1
-```
-
-## Function skeleton
-```
-function stray_number(array $numbers): int
-{
-	// Medium
-}
-```
-
-## Tests
-```
-$this->assertEquals(3, stray_number([1,1,1,3]));
-$this->assertEquals(3, stray_number([2,3,2]));
-$this->assertEquals(1, stray_number([9,9,1]));
-$this->assertNotEquals(1, stray_number([1,1,9]));
 ```
 
 
